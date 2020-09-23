@@ -3,7 +3,7 @@ package com.family.tree.nodes;
 import java.util.ArrayList;
 import java.util.List;
 
-/***
+/*
  * 
  * @author Swamy
  *
@@ -39,6 +39,10 @@ public class Node {
 	
 	public void setChildNode(Node node) {
 		this.childNodes.add(node);
+	}
+	
+	public boolean hasChilds() {
+		return this.childNodes.size()>0;
 	}
 	
 	public String toString() {
